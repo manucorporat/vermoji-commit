@@ -1,0 +1,75 @@
+{
+  "name": "emoji-commit",
+  "displayName": "Emoji Commit",
+  "description": "Emojis for committing.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Usama Asfar",
+    "email": "marshhcawki.mc@gmail.com"
+  },
+  "publisher": "chawki",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usama-asfar/commit-emoji"
+  },
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "galleryBanner": {
+    "color": "#fad000"
+  },
+  "keywords": [
+    "Emoji Log",
+    "Emoji Log VSCode",
+    "git",
+    "emoji",
+    "commit",
+    "messages"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "icon": "images/icon.png",
+  "activationEvents": [
+    "onCommand:extension.EmojiCommit"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.EmojiCommit",
+        "title": "Emoji Commit 🚀",
+        "icon": {
+          "dark": "images/icon.svg",
+          "light": "images/icon.svg"
+        }
+      }
+    ],
+    "menus": {
+      "scm/title": [
+        {
+          "when": "scmProvider == git",
+          "command": "extension.EmojiCommit",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.40.0",
+    "glob": "^7.1.5",
+    "mocha": "^6.2.2",
+    "typescript": "^3.6.4",
+    "tslint": "^5.20.0"
+  }
+}
