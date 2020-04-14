@@ -1,8 +1,8 @@
 {
   "name": "emoji-commit",
-  "displayName": "Emoji Commit",
+  "displayName": "Emoji Commit 🚀",
   "description": "Emojis for committing.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": {
     "name": "Usama Asfar",
     "email": "marshhcawki.mc@gmail.com"
@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/usama-asfar/commit-emoji"
+    "url": "https://github.com/usama-asfar/emoji-commit"
   },
   "engines": {
     "vscode": "^1.40.0"

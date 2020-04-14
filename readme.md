@@ -1,7 +1,8 @@
-Forked from [EMOJI-LOG-VSCode](https://github.com/ahmadawais/Emoji-Log-VSCode), Thanks to [Awais](https://twitter.com/MrAhmadAwais)
+<h1>
+  <sub><img src="./images/icon.png" height="40"></sub>
+  COMMIT EMOJI
+</h1>
 
-Inspired from [gitmoji](https://gitmoji.carloscuesta.me/), [EMOJI-LOG-VSCode](https://github.com/ahmadawais/Emoji-Log-VSCode), [GitCommitEmoji](https://gist.github.com/parmentf/035de27d6ed1dce0b36a)
+### press `ctrl+shift+p` search for commit emoji :rocket: and select a emoji to commit
 
-[ADD MORE](https://www.webfx.com/tools/emoji-cheat-sheet/)
-
-`Ctrl+Shift+P` search for `Emoji Commit` and select a emoji to commit
+Inspired from [gitmoji](https://gitmoji.carloscuesta.me/) & [EMOJI-LOG-VSCode](https://github.com/ahmadawais/Emoji-Log-VSCode)

@@ -5,272 +5,249 @@ interface Emoji {
 
 let EmojiCommit: Array<Emoji> = [
   {
-    emoji: "👶",
+    emoji: "🎉 INT COMMIT:",
     description: "Initial commit",
   },
   {
-    emoji: "🔖",
-    description: "Versioning tag",
+    emoji: "🎨 IMPROVED:",
+    description: "Improving structure / format of the code",
   },
   {
-    emoji: "📦",
-    description: "Package",
+    emoji: "⚡ PERFORMANCE:",
+    description: "Improving performance",
   },
   {
-    emoji: "🆕",
-    description: "Adding a new file/folder",
+    emoji: "🔥 REMOVED:",
+    description: "Removing code or files",
   },
   {
-    emoji: "🐛",
-    description: "Bug",
+    emoji: "🐛 BUG:",
+    description: "Fixing a bug",
   },
   {
-    emoji: "📝",
-    description: "Documentation",
-  },
-  {
-    emoji: "🚀",
-    description: "Release a new version",
-  },
-  {
-    emoji: "🧪",
-    description: "Testing",
-  },
-  {
-    emoji: "🐎",
-    description: "Increasing performance",
-  },
-  {
-    emoji: "💄",
-    description: "UI related",
-  },
-  {
-    emoji: "✅",
-    description: "Handling error, warning",
-  },
-  {
-    emoji: "✔",
-    description: "Handled error, warning",
-  },
-  {
-    emoji: "⚡:",
-    description: "General update",
-  },
-  {
-    emoji: "🎨",
-    description: "Improve format/structure",
-  },
-  {
-    emoji: "🔨",
-    description: "Refactor code",
-  },
-  {
-    emoji: "🔥",
-    description: "Removing code/files",
-  },
-  {
-    emoji: "🔒",
-    description: "Security",
-  },
-  {
-    emoji: "🔑",
-    description: "Keys",
-  },
-  {
-    emoji: "⬆️",
-    description: "Version update",
-  },
-  {
-    emoji: "⬇️",
-    description: "Version downgrade",
-  },
-  {
-    emoji: "↪️",
-    description: "Patch",
-  },
-  {
-    emoji: "↩️",
-    description: "Revert patch",
-  },
-  {
-    emoji: "🚑",
+    emoji: "🚑 HOTFIX:",
     description: "Critical hotfix",
   },
   {
-    emoji: "🚧",
+    emoji: "✨ NEW FEATURE:",
+    description: "Introducing new features",
+  },
+  {
+    emoji: "📝 DOC:",
+    description: "Doc related",
+  },
+  {
+    emoji: "🚀 RELEASE:",
+    description: "Releasing new version",
+  },
+  {
+    emoji: "💄 UI:",
+    description: "UI related ",
+  },
+  {
+    emoji: "🔒 SECURITY:",
+    description: "Security related",
+  },
+  {
+    emoji: "🍎 APPLE:",
+    description: "Related to Apple",
+  },
+  {
+    emoji: "🐧 LINUX:",
+    description: "Related to Linux",
+  },
+  {
+    emoji: "🏁 WINDOWS:",
+    description: "Related to Windows",
+  },
+  {
+    emoji: "🤖 ANDROID:",
+    description: "Related to Android",
+  },
+  {
+    emoji: "🍏 IOS:",
+    description: "Related to IOS",
+  },
+  {
+    emoji: "🔖 VERSION:",
+    description: "Releasing / Version tags",
+  },
+  {
+    emoji: "🚧 PROGRESS:",
     description: "Work in progress",
   },
   {
-    emoji: "➖",
-    description: "Removing a dependency",
+    emoji: "⬆️ DOWN DEP:",
+    description: "Downgrading dependencies",
   },
   {
-    emoji: "➕",
-    description: "Adding a dependency",
+    emoji: "⬇️ UP DEP:",
+    description: "Upgrading dependencies",
   },
   {
-    emoji: "🔀",
-    description: "Merging branches",
-  },
-  {
-    emoji: "💩",
-    description: "Bad code / Shit in code",
-  },
-  {
-    emoji: "⏪",
-    description: "Reverting changes",
-  },
-  {
-    emoji: "👌",
-    description: "Code review changes",
-  },
-  {
-    emoji: "♿",
-    description: "Accessibility",
-  },
-  {
-    emoji: "🔤",
-    description: "Translation",
-  },
-  {
-    emoji: "©",
-    description: "Copyright related",
-  },
-  {
-    emoji: "❌",
-    description: "Something not working",
-  },
-  {
-    emoji: "❗",
-    description: "Something went wrong",
-  },
-  {
-    emoji: "⛔",
-    description: "Don't touch code/file",
-  },
-  {
-    emoji: "🔜",
-    description: "Coming soon",
-  },
-  {
-    emoji: "🆗",
-    description: "Fixed",
-  },
-  {
-    emoji: "⚠️",
-    description: "Warning",
-  },
-  {
-    emoji: "👍",
-    description: "Done",
-  },
-  {
-    emoji: "👎",
-    description: "Not Done",
-  },
-  {
-    emoji: "🔉",
-    description: "Adding logs",
-  },
-  {
-    emoji: "🔇",
-    description: "Removing logs",
-  },
-  {
-    emoji: "📋",
-    description: "Code copied / pasted",
-  },
-  {
-    emoji: "📜",
-    description: "READ.md",
-  },
-  {
-    emoji: "🏃",
-    description: "Working On It",
-  },
-  {
-    emoji: "🚿",
-    description: "Cleaning Code",
-  },
-  {
-    emoji: "☸️",
-    description: "kubernetes",
-  },
-  {
-    emoji: "🐋",
-    description: "docker",
-  },
-  {
-    emoji: "🗑",
-    description: "Trash / Delete",
-  },
-  {
-    emoji: "🚩",
-    description: "Feature flags",
-  },
-  {
-    emoji: "🔍",
-    description: "SEO",
-  },
-  {
-    emoji: "⚗️",
-    description: "Experimenting things",
-  },
-  {
-    emoji: "🚸",
-    description: "Improving user experience / usability",
-  },
-  {
-    emoji: "👥",
-    description: "Adding contributor(s)",
-  },
-  {
-    emoji: "🗄️",
-    description: "Performing database related changes",
-  },
-  {
-    emoji: "💬",
-    description: "Updating text and literals",
-  },
-  {
-    emoji: "📄",
-    description: "License related",
-  },
-  {
-    emoji: "✏️",
-    description: "Fixing typos",
-  },
-  {
-    emoji: "📈",
-    description: "Analytics / Tracking related",
-  },
-  {
-    emoji: "📌",
+    emoji: "📌 PIN DEP",
     description: "Pinning dependencies to specific versions",
   },
   {
-    emoji: "🤖",
-    description: "Android related",
+    emoji: "🔨 REFACTORED:",
+    description: "Refactoring code",
   },
   {
-    emoji: "🏁",
-    description: "Windows related",
+    emoji: "🐋 DOCKER:",
+    description: "Work about Docker",
   },
   {
-    emoji: "🐧",
-    description: "Linux related",
+    emoji: "☸️ K8S:",
+    description: "Work about Kubernetes",
   },
   {
-    emoji: "🍎",
-    description: "Apple related",
+    emoji: "➕ ADD DEP:",
+    description: "Adding a dependency",
   },
   {
-    emoji: "🎉",
-    description: "Deploying",
+    emoji: "➖ REMOVE DEP:",
+    description: "Removing a dependency",
   },
   {
-    emoji: "✨",
-    description: "Introducing new features",
+    emoji: "🔧 CONFIG:",
+    description: "Configuration files related",
+  },
+  {
+    emoji: "✏️ TYPO:",
+    description: "Fixing typos",
+  },
+  {
+    emoji: "💩 SHIT:",
+    description: "Bad code / Shit in code",
+  },
+  {
+    emoji: "⏪ REVERT:",
+    description: "Reverting changes",
+  },
+  {
+    emoji: "🔀 MERGE:",
+    description: "Merging branches",
+  },
+  {
+    emoji: "📦 PACK:",
+    description: "Package related",
+  },
+  {
+    emoji: "📃 LICENSE:",
+    description: "Adding or updating license",
+  },
+  {
+    emoji: "💥 CHANGE:",
+    description: "Introducing breaking changes",
+  },
+  {
+    emoji: "🍱 ASSET:",
+    description: "Adding or updating assets",
+  },
+  {
+    emoji: "👌 UPDATED:",
+    description: "Updating code due to code review changes",
+  },
+  {
+    emoji: "♿ A11Y",
+    description: "Improving accessibility",
+  },
+  {
+    emoji: "🗄️ DB:",
+    description: "Performing database related changes",
+  },
+  {
+    emoji: "🔉 LOG:",
+    description: "Adding logs",
+  },
+  {
+    emoji: "🔇 LOG:",
+    description: "Removing logs",
+  },
+  {
+    emoji: "👥 CONTRIB:",
+    description: "contributor(s) related",
+  },
+  {
+    emoji: "🚸 IMPROVED:",
+    description: "Improving user experience / usability",
+  },
+  {
+    emoji: "📱 RES:",
+    description: "Working on responsive design",
+  },
+  {
+    emoji: "⚗️ EXP:",
+    description: "Experimenting new things",
+  },
+  {
+    emoji: "🔍 SEO:",
+    description: "Improving SEO & Related",
+  },
+  {
+    emoji: "🚩 FLAG:",
+    description: "Adding, updating, or removing feature flags",
+  },
+  {
+    emoji: "🗑️ DEP:",
+    description: "Deprecating code that needs to be cleaned up",
+  },
+  {
+    emoji: "🧪 TEST:",
+    description: "Testing related",
+  },
+  {
+    emoji: "💫 UPDATE:",
+    description: "General update",
+  },
+  {
+    emoji: "↪️ PATCH:",
+    description: "Patch",
+  },
+  {
+    emoji: "↩️ REVERT PATCH:",
+    description: "Revert patch",
+  },
+  {
+    emoji: "⛔ DON'T:",
+    description: "Don't touch code/file",
+  },
+  {
+    emoji: "👍 DONE:",
+    description: "Done",
+  },
+  {
+    emoji: "👎 NOT DONE:",
+    description: "Not Done",
+  },
+  {
+    emoji: "📋 CLIP:",
+    description: "Code pasted",
+  },
+  {
+    emoji: "🏃 ON:",
+    description: "Working On It",
+  },
+  {
+    emoji: "🧹 CLEANED:",
+    description: "Cleaning Code",
+  },
+  {
+    emoji: "🆕 NEW:",
+    description: "Adding new file/folder",
+  },
+  {
+    emoji: "🔁 REVERT:",
+    description: "Reverting changes",
+  },
+  {
+    emoji: "✔️ PASSED:",
+    description: "Test passed",
+  },
+  {
+    emoji: "❌ FAILED:",
+    description: "Test failed",
   },
 ];
+
 export default EmojiCommit;
