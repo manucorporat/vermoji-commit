@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/manucorporat/vermoji"
+    "url": "https://github.com/manucorporat/vermoji-commit"
   },
   "engines": {
     "vscode": "^1.40.0"
