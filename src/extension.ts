@@ -1,10 +1,10 @@
 import * as vscode from "vscode";
 import { GitExtension, Repository } from "./api/git";
-import EmojiCommit from "./EmojiCommit/EmojiCommit";
+import {getVermoji} from "./EmojiCommit/EmojiCommit";
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
-    "extension.EmojiCommit",
+    "extension.VermojiCommt",
     (uri?) => {
       const git = getGitExtension();
 
@@ -13,39 +13,22 @@ export function activate(context: vscode.ExtensionContext) {
         return;
       }
 
-      let emojis = EmojiCommit;
-      let items = [];
+      const emoji = getVermoji();
 
-      for (let i = 0; i < emojis.length; i++) {
-        items.push({
-          label: `${emojis[i].description}`,
-          description: `${emojis[i].emoji}`,
-          emoji: emojis[i].emoji,
+      vscode.commands.executeCommand("workbench.view.scm");
+
+      if (uri) {
+        let selectedRepository = git.repositories.find((repository) => {
+          return repository.rootUri.path === uri._rootUri.path;
         });
+        if (selectedRepository) {
+          prefixCommit(selectedRepository, emoji);
+        }
+      } else {
+        for (let repo of git.repositories) {
+          prefixCommit(repo, emoji);
+        }
       }
-
-      vscode.window
-        .showQuickPick(items, {
-          placeHolder: "Select a Emoji for committing.",
-        })
-        .then(function (selected) {
-          if (selected) {
-            vscode.commands.executeCommand("workbench.view.scm");
-
-            if (uri) {
-              let selectedRepository = git.repositories.find((repository) => {
-                return repository.rootUri.path === uri._rootUri.path;
-              });
-              if (selectedRepository) {
-                prefixCommit(selectedRepository, selected.emoji);
-              }
-            } else {
-              for (let repo of git.repositories) {
-                prefixCommit(repo, selected.emoji);
-              }
-            }
-          }
-        });
     }
   );
 
@@ -53,7 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 function prefixCommit(repository: Repository, prefix: String) {
-  repository.inputBox.value = `${prefix} ${repository.inputBox.value}`;
+  repository.inputBox.value = `${repository.inputBox.value}${prefix}`;
 }
 
 function getGitExtension() {

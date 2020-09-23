@@ -1,17 +1,13 @@
 {
-  "name": "emoji-commit",
-  "displayName": "Emoji Commit 🚀",
-  "description": "Emojis for committing.",
+  "name": "vermoji",
+  "displayName": "Vermoji 🍉",
+  "description": "Vermoji for committing.",
   "version": "2.0.0",
-  "author": {
-    "name": "Usama Asfar",
-    "email": "marshhcawki.mc@gmail.com"
-  },
   "publisher": "chawki",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/usama-asfar/emoji-commit"
+    "url": "https://github.com/manucorporat/vermoji"
   },
   "engines": {
     "vscode": "^1.40.0"
@@ -21,10 +17,10 @@
   },
   "keywords": [
     "Emoji Log",
-    "Emoji Log VSCode",
     "git",
     "emoji",
     "commit",
+    "vermoji",
     "messages"
   ],
   "categories": [
@@ -32,14 +28,14 @@
   ],
   "icon": "images/icon.png",
   "activationEvents": [
-    "onCommand:extension.EmojiCommit"
+    "onCommand:extension.VermojiCommt"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.EmojiCommit",
-        "title": "Emoji Commit 🚀",
+        "command": "extension.VermojiCommt",
+        "title": "Vermoji Commit 🍉",
         "icon": {
           "dark": "images/icon.svg",
           "light": "images/icon.svg"
@@ -50,7 +46,7 @@
       "scm/title": [
         {
           "when": "scmProvider == git",
-          "command": "extension.EmojiCommit",
+          "command": "extension.VermojiCommt",
           "group": "navigation"
         }
       ]
