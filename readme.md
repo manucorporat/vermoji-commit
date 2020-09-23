@@ -3,8 +3,5 @@
   VERMOJI COMMIT 🍉
 </h1>
 
-### press `ctrl+shift+p` search for commit emoji :rocket: and select a emoji to commit
+Generate random emojis for your WIP commits!!
 
-Inspired from [gitmoji](https://gitmoji.carloscuesta.me/) & [EMOJI-LOG-VSCode](https://github.com/ahmadawais/Emoji-Log-VSCode)
-
-Forked from https://github.com/usama-asfar/emoji-commit
