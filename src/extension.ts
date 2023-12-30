@@ -1,6 +1,6 @@
 import * as vscode from "vscode";
 import { GitExtension, Repository } from "./api/git";
-import {getVermoji} from "./EmojiCommit/EmojiCommit";
+import { getVermoji } from "./EmojiCommit/EmojiCommit";
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
@@ -17,17 +17,8 @@ export function activate(context: vscode.ExtensionContext) {
 
       vscode.commands.executeCommand("workbench.view.scm");
 
-      if (uri) {
-        let selectedRepository = git.repositories.find((repository) => {
-          return repository.rootUri.path === uri._rootUri.path;
-        });
-        if (selectedRepository) {
-          prefixCommit(selectedRepository, emoji);
-        }
-      } else {
-        for (let repo of git.repositories) {
-          prefixCommit(repo, emoji);
-        }
+      for (let repo of git.repositories) {
+        prefixCommit(repo, emoji);
       }
     }
   );
@@ -45,4 +36,4 @@ function getGitExtension() {
   return gitExtension && gitExtension.getAPI(1);
 }
 
-export function deactivate() {}
+export function deactivate() { }
